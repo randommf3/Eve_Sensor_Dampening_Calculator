@@ -10,7 +10,7 @@ while True:
         targeting_range = (targeting_range * num3 + num1 * (1 - num3)) / 100
         num3 *= power_reduction
 
-    print("Targeting Range with {} dampeners, each with a power of {}: {:.4f}".format(num2, num3, targeting_range))
+    print("Targeting Range with {} dampeners, each with a power of {}: {:.4f}".format(num2, num3, targeting_range* 100))
 
     repeat = input("Do you want to calculate again? (yes/no): ")
     if repeat.lower() != "yes":
